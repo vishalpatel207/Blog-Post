@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        .top{
+            display: flex;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .fa{
+            margin-left: 30px;
+            font-size: 20px;
+            color: black;
+        }
+        .fa:hover{
+            color:green;
+        }
+        .nav{
+            margin-left: 10px;
+        }
+        a{
+            
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .link{
+            margin-left: 30px;
+        }
+        a:hover{
+            color: green;
+        }
+        img{
+            width:100%;
+            height: 750px;
+            
+        }
+        .country{
+            margin-top: 20px;
+        }
+        h1{
+            font-family: algerian;
+        }
+        .ind,.usa,.dubai{
+            text-align: justify;
+            font-size: 20px;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+        .button{
+            margin-left: 800px;
+        }
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+     <script>
+         
+     $(document).ready(function(){
+         $("#d1").hide()
+         $("#ind").click(function(){
+             $("#d1").show(1000);
+         });
+     });
+     $(document).ready(function(){
+         $("#d2").hide()
+         $("#usa").click(function(){
+             $("#d2").show(1000);
+         });
+     });
+     $(document).ready(function(){
+         $("#d3").hide()
+         $("#dubai").click(function(){
+             $("#d3").show(1000);
+         });
+     });
+     </script>
+</head>
+<body>
+    <div class="top">
+        <div class="fa"><a href="home.html"><i class="fa-solid fa-tree"></i></a></div>
+        <div class=nav>
+            <nav>
+                <a href="home.html" class="link">Home</a> 
+                <a href="blog.html" class="link">blogs</a> 
+                <a href="destination.html" class="link">Destinations</a> 
+                <a href="about.html" class="link">About us</a>
+                <a href="sign in.html"><button class="button">Sign in</button></a>
+                <a href="Bootstrap Form.html"><button class=>Sign Up</button></a>
+            </nav>
+        </div>
+    </div><hr>
+    <div class="box">
+        <div class=country>
+            <img src="india.jpg" alt="India">
+        </div>
+        <div class="ind">
+            <h1 id="ind">India :</h1>(Click On Title)
+            <p id="d1" style="font-family: Microsoft JhengHei;">India, officially the Republic of India (Hindi: Bharat Ganarajya), is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world. 
+                Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west; China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. 
+                In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar, and Indonesia.</p>
+        </div>
+        <hr>
+        <div class="country">
+            <img src="usa.jpg" alt="USA">
+        </div>
+        <div class="usa">
+            <h1 id="usa">United States of America :</h1>
+            <p id="d2" style="font-family: Microsoft JhengHei;">The United States of America (U.S.A. or USA), commonly known as the United States (U.S. or US) or America, is a country primarily located in North America. It consists of 50 states, a federal district, five major unincorporated territories, nine Minor Outlying Islands and 326 Indian reservations. 
+                The United States is also in free association with three Pacific Island sovereign states: the Federated States of Micronesia, the Marshall Islands, and the Republic of Palau. It is the world's third-largest country by both land and total area. It shares land borders with Canada to its north and with Mexico to its south. 
+                The U.S. has maritime borders with the Bahamas, Cuba, Russia, and other nations. With a population of over 333 million, it is the most populous country in the Americas and the third most populous in the world. The national capital is Washington, D.C. and the most populous city and financial center is New York City.</p>
+        </div>
+        <hr>
+        <div class="country">
+            <img src="dubai.jpg" alt="Dubai">
+        </div>
+        <div class="dubai">
+            <h1 id="dubai">Dubai :</h1>
+            <p id="d3" style="font-family: Microsoft JhengHei;">Dubai  is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai, the most populated of the 7 emirates of the United Arab Emirates. 
+                Established in the 18th century as a small fishing village, the city grew rapidly in the early 21st century with a focus on tourism and luxury, having the second most five-star hotels in the world, and the tallest building in the world, the Burj Khalifa, which is 828 metres (2,717 ft) tall.
+                In the eastern Arabian Peninsula on the coast of the Persian Gulf, it is also a major global transport hub for passengers and cargo. Oil revenue helped accelerate the development of the city, which was already a major mercantile hub.</p>
+        </div>
+        <hr>
+    </div>
+    © 2023 minior project All Rights Reserved.
+</body>
+</html>
